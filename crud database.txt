@@ -1,0 +1,35 @@
+database name crud
+
+-- Table structure for table `students`
+
+CREATE TABLE `students` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `phone` varchar(255) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+ data for table `students`
+--
+
+INSERT INTO `students` (`id`, `name`, `email`, `phone`) VALUES
+(3, 'demo', 'demo@gmail.com', '009378976767'),
+(4, 'John Doe', 'johndoe@gmail.com', '999999999'),
+(5, 'Karimja', 'ka@gmail.com', '7333392'),
+(6, 'Jamal', 'ja@gmail.com', '3434343'),
+(7, 'john', 'na@gmail.com', '343434'),
+(8, 'Tom Logan', 'Tom@gmail.com', '7347374347'),
+(12, 'Tom Logan', 'tom@gmail.com', '11111111111'),
+(13, 'arun', 'fa@gmail.com', '347374837483'),
+(14, 'saffi', 'wa@gmail.com', '4354354345');
+
+
+ALTER TABLE `students`
+  ADD PRIMARY KEY (`id`);
+
+
+ AUTO_INCREMENT for dumped tables
+
+AUTO_INCREMENT for table `students`
+
+ALTER TABLE `students`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
